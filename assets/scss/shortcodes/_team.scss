@@ -1,0 +1,88 @@
+/* ====================== [ Start Team ] ====================== */
+
+// .team-carsouel {
+
+//     .item {
+//         overflow: hidden;
+
+//         .img {
+//             position: relative;
+
+//             .info {
+//                 position: absolute;
+//                 bottom: 0;
+//                 left: 20px;
+//                 right: 20px;
+//                 padding: 30px 20px;
+//                 background: $bg-color;
+//                 transform: translateY(110%);
+//                 transition: all .4s;
+//             }
+//         }
+
+//         &:hover {
+
+//             .img {
+
+//                 .info {
+//                     transform: translateY(0);
+//                 }
+//             }
+//         }
+//     }
+// }
+
+.teams {
+
+    .max-margin {
+        margin-left: -40px;
+        margin-right: -40px;
+
+        .lg-marg {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+    }
+
+    .item {
+        .item-inner {
+            position: relative;
+            overflow: hidden;
+
+            &:hover {
+                .item-info {
+                    visibility: visible;
+                    opacity: 1;
+                    bottom: 0;
+                }
+            }
+
+            .item-img {}
+
+            .item-info {
+                position: absolute;
+                bottom: -100%;
+                left: 50%;
+                transform: translate(-50%);
+                width: 100%;
+                text-align: center;
+                background: #1A1F5D;
+                padding: 20px 10px;
+                // visibility: visible;
+                // opacity: 1;
+                transition: all 0.5s ease;
+
+                .sub-title {
+                    display: inline-block;
+                    font-size: 14px;
+                }
+
+                h6 {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}
+
+/* ====================== [ End Team ] ====================== */

@@ -1,0 +1,243 @@
+/* ====================== [ Start Typography  ] ====================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+}
+
+html {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    color: #fff;
+    background: $body-color;
+    line-height: 1.5;
+    font-family: $title-font;
+    font-weight: 400;
+    text-transform: capitalize;
+    overflow-x: hidden !important;
+}
+
+.main-content {
+    background: $bg-color;
+    position: relative;
+    z-index: 9;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: 55px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 35px;
+}
+
+h4 {
+    font-size: 30px;
+}
+
+h5 {
+    font-size: 25px;
+}
+
+h6 {
+    font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    line-height: 1.6;
+    font-weight: 500;
+    font-family: $title-font;
+}
+
+h3 {
+    font-weight: 600 !important;
+}
+
+p {
+    color: $pcolor !important;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: $text-font;
+    line-height: 1.9;
+    margin: 0;
+}
+
+[data-overlay-dark] p,
+.bg--dark p,
+.bg-color p {
+    color: #d6d7da
+}
+
+a,
+a:hover {
+    color: inherit;
+}
+
+span {
+    display: inline-block;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.3s ease;
+
+    h6 {
+        transition: all 0.3s ease;
+    }
+
+    &:hover {
+        text-decoration: none;
+        color: #555ffd !important;
+
+
+        h6 {
+            color: #555ffd !important;
+        }
+    }
+
+    small {
+        display: inline-flex;
+        text-transform: capitalize;
+    }
+}
+
+figure {
+    margin: 0;
+}
+
+.index-marg {
+    padding-left: 100px;
+}
+
+.btn-primary {
+    outline: none;
+    box-shadow: none;
+    border: 1px solid;
+    padding: 10px 20px;
+    background: $white-color;
+    color: $sub-bg;
+    text-transform: capitalize;
+    font-family: $text-font;
+    font-weight: 400;
+    border-radius: 30px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+
+    &:hover {
+        color: #ffffff;
+        border: 1px solid #ffffff;
+        background: transparent;
+
+        a {
+            color: #ffffff !important;
+        }
+    }
+
+}
+
+section {
+    // padding: 65px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 80px;
+
+    .section_title-top {
+        font-size: 16px;
+        line-height: 2rem;
+        color: #d6d7da;
+        text-transform: capitalize;
+        font-family: $text-font;
+        font-weight: 400;
+
+        a {
+            color: #565EC8 !important;
+            display: inline-block;
+            cursor: pointer;
+        }
+    }
+
+    h6 {}
+
+    h2 {
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 35px;
+        display: inline-block;
+        position: relative;
+
+        // &::after {
+        //     content: "";
+        //     position: absolute;
+        //     width: 40%;
+        //     height: 2px;
+        //     background: $white-color;
+        //     bottom: -10%;
+        //     left: 50%;
+        //     transform: translateX(-50%);
+        // }
+    }
+
+    &.left_aling {
+        text-align: start;
+        margin-bottom: 50px;
+
+        h2 {
+            text-align: start;
+
+            &::after {
+                left: 0;
+                width: 30%;
+                transform: translateX(0);
+            }
+        }
+    }
+}
+
+// .navbar .navbar-collapse {
+//     overflow-x: hidden !important;
+// }
+
+.navbar-nav .dropdown-menu.show {
+    background: #1A1F5D !important;
+}
+
+.navbar .navbar-toggler {
+    outline: none;
+    border: none;
+    box-shadow: none;
+
+    &:hover,
+    :active {
+        outline: none;
+        border: none;
+        box-shadow: none;
+    }
+}
+
+/* ====================== [ End Typography  ] ====================== */

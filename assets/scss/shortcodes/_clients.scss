@@ -1,0 +1,174 @@
+/* ====================== [ Start brands ] ====================== */
+
+.clients {
+
+   .brands-img {
+
+      .img {
+         transition: all .4s;
+
+         &:hover {
+            opacity: 1;
+         }
+      }
+   }
+
+}
+
+.clients {
+
+   .brands {
+      // padding: 30px 10px;
+      text-align: center;
+
+      // border: 1px solid rgba(255, 255, 255, .08);
+      .item {
+         background: #ffffff;
+         // margin-bottom: 20px;
+         padding: 10px;
+      }
+
+      &.box-bg {
+         border: 0;
+         padding: 0;
+         // padding-left: 15px;
+         // padding-right: 15px;
+
+         .item {
+            position: relative;
+            text-align: center;
+            // padding: 16px 50px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            // margin: 0 15px;
+            background: #ffffff;
+         }
+      }
+
+      &:hover {
+
+         .img {
+            transform: scale(0);
+            opacity: 0;
+         }
+
+         .link {
+            opacity: 1 !important;
+            transition: all 0;
+         }
+
+         .char {
+            animation: fadeInUp .3s cubic-bezier(.3, 0, .7, 1) both;
+            animation-delay: calc(20ms * var(--char-index));
+         }
+
+         .item {
+            a {
+               span {
+                  color: #000000;
+               }
+            }
+         }
+      }
+
+      .item {
+         position: relative;
+         text-align: center;
+
+         .link {
+            font-size: 14px;
+            width: max-content;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            opacity: 0;
+            transition: all .3s;
+            text-transform: lowercase;
+         }
+      }
+
+      .img {
+         opacity: .8;
+         max-width: 100%;
+         margin: auto;
+         position: relative;
+         transition: all .4s;
+      }
+   }
+
+   .bord {
+      border-bottom: 1px solid rgba(255, 255, 255, .08);
+   }
+
+   .main-marq {
+      position: relative;
+      padding: 0;
+
+      .slide-har {
+         display: flex;
+      }
+
+      .box {
+         display: flex;
+
+         .item {
+            position: relative;
+            text-align: center;
+            padding: 16px 50px;
+            border: 1px solid rgba(255, 255, 255, .08);
+            margin: 0 15px;
+            background: #ffffff;
+
+
+
+            &:hover {
+               a {
+                  display: block;
+
+                  span.char {
+                     display: inline-block;
+                     color: #000000;
+                  }
+               }
+
+               .img {
+                  transform: scale(0);
+                  opacity: 0;
+               }
+
+               .link {
+                  opacity: 1 !important;
+                  transition: all 0;
+               }
+
+               .char {
+                  animation: fadeInUp .3s cubic-bezier(.3, 0, .7, 1) both;
+                  animation-delay: calc(20ms * var(--char-index));
+               }
+            }
+
+            .link {
+               font-size: 14px;
+               width: max-content;
+               position: absolute;
+               top: 50%;
+               left: 50%;
+               transform: translateX(-50%) translateY(-50%);
+               opacity: 0;
+               transition: all .3s;
+               overflow: hidden;
+               text-transform: lowercase;
+            }
+
+            .img {
+               width: 110px;
+               margin: auto;
+               position: relative;
+               transition: all .4s;
+            }
+         }
+      }
+   }
+}
+
+/* ====================== [ End brands ] ====================== */

@@ -1,0 +1,127 @@
+.numbers {
+   .item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .numb {
+         span {
+            font-size: 40px;
+            margin-inline-start: 5px;
+
+
+            small {
+               font-size: 20px;
+               display: inline-block;
+               font-weight: normal;
+               margin-inline-end: 5px;
+            }
+         }
+
+      }
+   }
+}
+
+.job {
+   .section-title {
+      h2 {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+      }
+
+      .section_icon {
+         font-size: 44px;
+         display: inline-block;
+         margin-inline-end: 10px;
+      }
+   }
+
+   .job_box {
+      border: 1px solid #b5b2b230;
+      padding: 40px 30px;
+      border-radius: 10px;
+
+      .job_box-left {
+         border-inline-end: 1px solid #b5b2b230;
+
+         .job_box-title {
+            margin-block-end: 8px;
+
+            h3 {}
+         }
+
+         .job_box-dsc {
+            display: flex;
+
+            .job_box-dsc--item {
+               margin-inline-end: 20%;
+
+               a,
+               span {
+                  display: inline-block;
+                  text-transform: capitalize;
+                  font-family: $text-font;
+                  font-weight: 500;
+                  color: rgba(179, 183, 187, 0.851);
+                  font-size: 14px;
+                  transition: all 0.3s ease;
+
+
+                  .section_icon {
+                     margin-inline-end: 8px;
+                     color: #ffffff;
+                     font-size: 18px;
+                  }
+               }
+
+               a {
+                  &:hover {
+                     color: #565EC8;
+                  }
+
+               }
+
+               &:last-child {
+                  margin-inline-end: 0;
+               }
+            }
+         }
+      }
+
+      .job_box-right {
+         .job_box-inner {
+            border-inline-end: 1px solid #b5b2b230;
+            padding-block: 8px;
+
+            strong {
+               font-size: 16px;
+               font-family: $text-font;
+               font-weight: 500;
+               line-height: 1.5;
+               display: inline-block;
+               margin-block-end: 8px;
+            }
+
+            span {
+               display: inline-block;
+               text-transform: capitalize;
+               font-family: $text-font;
+               font-weight: 500;
+               color: rgba(179, 183, 187, 0.851);
+               font-size: 14px;
+
+            }
+         }
+
+         .job_box-btn {
+            text-align: center;
+
+            .btn-primary {
+               border-radius: 10px;
+               padding-inline: 36px;
+            }
+         }
+      }
+   }
+}

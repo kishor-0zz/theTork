@@ -1,0 +1,90 @@
+.blog-post {
+   .cont {
+      a {
+         position: relative;
+         transition: all 0.3s ease;
+
+         &:hover {
+            color: #2C91F9;
+         }
+
+         i {
+            position: absolute;
+            font-size: 22px;
+            top: -2px;
+         }
+      }
+   }
+
+   .blog_item {
+      overflow: hidden;
+
+      .blog_img {
+         box-shadow: rgba(81, 90, 157, 0.2) 0px 10px 15px -5px, rgba(0, 0, 0, 0.2) 0px -10px 1px -14px;
+         overflow: hidden;
+      }
+
+      .blog_content {
+         padding-top: 30px;
+         text-transform: capitalize;
+
+         h3 {
+            font-size: 22px;
+            text-transform: capitalize;
+            font-family: $text-font;
+            color: $white-color;
+            margin-bottom: 14px;
+            line-height: 1.4;
+         }
+
+         small {
+            font-size: 18px;
+            margin-bottom: 22px;
+            display: block;
+            margin-bottom: 14px;
+            color: #c5784c;
+            text-transform: capitalize;
+         }
+
+         button {
+            outline: none;
+            background: transparent;
+            border: unset;
+            color: $primery-color;
+            cursor: pointer;
+
+            .btn-icon {
+               position: relative;
+               top: 1px;
+               left: 4px;
+               font-size: 12px;
+            }
+         }
+
+
+
+         p {
+            color: $text-color;
+            font-size: 14px;
+            margin-bottom: 10px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+         }
+
+         .btn-primary {
+            display: inline-block;
+            margin-top: 10px;
+
+            .btn-icon {
+               position: relative;
+               top: 1px;
+               font-size: 14px;
+               margin-left: 2px;
+            }
+         }
+      }
+   }
+}

@@ -1,0 +1,118 @@
+.contact {
+   .form-box {
+      .form-group {
+         margin-block-end: 26px;
+         width: 100%;
+
+         label {
+            margin-bottom: 5px;
+            text-transform: capitalize;
+         }
+
+         input {
+            outline: none;
+            box-shadow: none;
+            padding: 10px;
+            background: transparent;
+            color: #ffffff;
+            border: 1px solid rgba(158, 157, 157, 0.239);
+            transition: all 0.3s ease;
+
+            &:hover {
+               border: 1px solid rgba(32, 57, 141, 0.471);
+            }
+
+            &:focus {
+               border: 1px solid rgba(15, 44, 141, 0.878);
+            }
+         }
+
+         textarea {
+            outline: none;
+            box-shadow: none;
+            background: transparent;
+            color: #ffffff;
+            border: 1px solid rgba(158, 157, 157, 0.239);
+            transition: all 0.3s ease;
+            min-height: 150px;
+
+            &:hover {
+               border: 1px solid rgba(32, 57, 141, 0.471);
+            }
+
+            &:focus {
+               border: 1px solid rgba(15, 44, 141, 0.878);
+            }
+         }
+
+         .contact_right {}
+      }
+   }
+
+   .contact_right {
+      padding-left: 100px;
+   }
+}
+
+.contact_review {
+   .revew_list {
+      padding-top: 22px;
+
+      nav {
+         ul {
+            padding: 0 !important;
+            margin-block-end: 0;
+
+            li {
+               .contact_icon {
+                  margin-inline-end: 8px;
+                  font-size: 16px;
+               }
+
+               a {
+                  text-transform: lowercase;
+                  color: $white-color;
+                  font-size: 18px;
+                  font-family: $text-font;
+                  font-weight: 400;
+                  display: block;
+                  margin-bottom: 10px;
+
+                  .contact_icon {
+                     margin-inline-end: 8px;
+                  }
+               }
+            }
+         }
+      }
+
+      &.social_icons {
+
+         nav {
+            ul {
+               li {
+                  display: inline-block;
+                  margin-right: 5px;
+
+                  a {
+                     display: block;
+                     width: 40px;
+                     height: 40px;
+                     line-height: 40px;
+                     text-align: center;
+                     background: transparent;
+                     border: 1px solid $white-color;
+                     border-radius: 100%;
+                     transition: all 0.3s ease;
+
+                     &:hover {
+                        // background: $sub-bg;
+                        border: 1px solid #555ffd !important;
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}
